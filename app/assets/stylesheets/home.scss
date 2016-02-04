@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'MeriendaOne-Regular';
+    src: url(/assets/MeriendaOne-Regular.ttf);
+}
+body{
+	margin: 0;
+}
+
+/*=======================  header ============================================*/
+#mybrand{
+	color: #fff;
+	font-weight: bold;
+	font-family: 'MeriendaOne-Regular';
+}
+#mynav{
+	background: #0089c1;
+	border: none;
+	border-radius:0;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+}
+#my-tog{
+	border:1px solid #fff;
+	background: #059;
+}
+#my-tog:hover{
+	background: inherit;
+}
+#myul{}
+#myul li a{
+	color: #fff;
+	font-family: arial;
+	font-weight: 500;
+}
+#myul li a:hover{
+	background: #06b;
+}
+#myul-r{}
+#myul-r li a{
+	color: #fff;
+}
+#myul-r li a:hover{
+	background: #059;
+	transition: all 0.2s linear;
+}
+#bg-head{
+	background: url('/assets/bg-head.jpg') no-repeat center center;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	margin-top: 70px;
+	margin-bottom: 30px;
+}
+#web-name{
+	font-family: 'MeriendaOne-Regular';
+	color: #005;
+	font-weight: bold;
+}
+#slogan{
+	font-family: 'MeriendaOne-Regular';
+	color: #005;
+}
+#block-login{
+	background: rgba(0,0,0,0.3);
+	padding: 20px 15px;
+	border-radius: 5px;
+}
+.title-log{
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.my-btn{
+	border: none;
+	background: #048;
+	color: #fff;
+	padding: 6px 10px;
+}
+.my-btn:hover{
+	background: #05a;
+	transition: all 0.2s linear;
+}
+.my-btn-a{
+	border: none;
+	background: #048;
+	color: #fff;
+	padding: 8px 10px;
+}
+.my-btn-a:hover{
+	text-decoration: none;
+	color: #fff;
+	background: #05a;
+	transition: all 0.2s linear;
+}
+
+/*=======================  footer ============================================*/
+.footer{
+	margin-top: 80px;
+	padding: 30px 0 10px 0;
+	background: #0089c1;
+}
+.title-list-foot{
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	padding-bottom: 10px;
+}
+.content-list-foot{
+	padding: 10px 0 30px 0;
+	margin-left: 30px;
+}
+.content-list-foot li{
+	list-style: none;
+}
+.content-list-foot li a{
+	list-style: none;
+	text-decoration: none;
+	color: #fff;
+	line-height: 25px;
+}
+.content-list-foot li a:hover{
+	text-decoration: underline;
+}
+.cp-right{
+	color: #fff;
+	padding: 15px 0;
+	background: #0069a6;
+	text-align: center;
+}
+
+/*=======================  home body============================================*/
+.cate-block{
+	background: #0080b9;
+	padding: 20px 0;
+}
+.title-cate{
+	font-family: 'MeriendaOne-Regular';
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.content-cate{
+	color: #fff;
+	font-size: 14px;
+	padding: 20px 10px;
+	line-height: 30px;
+}
+.my-btn-cate{
+	border: none;
+	background: #fff;
+	color: #0089c1;
+	padding: 8px 15px;
+}
+.my-btn-cate:hover{
+	text-decoration: none;
+	color: #0089c1;
+	background: #fff;
+	box-shadow: 0 2px 8px #000;
+	transition: all 0.2s linear;
+}
+.text-main{
+	color: #0099e9;
+	font-family: 'MeriendaOne-Regular';
+}
+.text-submain{
+	color: #333;
+	font-family: 'MeriendaOne-Regular';
+}
+.my-p{
+	color: #444;
+	font-size: 14px;
+	line-height: 30px;
+}
+.my-btn-main{
+	border: none;
+	background: #0079b9;
+	color: #fff;
+	padding: 8px 15px;
+	margin-top: 30px;
+}
+.my-btn-main:hover{
+	text-decoration: none;
+	color: #fff;
+	background: #00aae9;
+	transition: all 0.2s linear;
+}
+.my-btn-fb{
+	border: none;
+	background: #fff;
+	color: #048;
+	padding: 5px 9px;
+	border: 1px solid #048;
+}
+.my-btn-fb:hover{
+	background: #fff;
+	transition: all 0.2s linear;
+	box-shadow: 0 2px 8px #fff;
+}
