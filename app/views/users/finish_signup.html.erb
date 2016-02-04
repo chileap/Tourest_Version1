@@ -1,7 +1,5 @@
-<div id="wrapper" style="margin-top:100px;">
-    <div class="container">
-      <div class="col-md-10 col-sm-10 col-xs-12 container">
-        <div id="add-email" class="container">
+<div class="posts-wrapper">
+        <div id="add-email">
         <h1>Add Email</h1>
         <%= form_for(current_user, :as => 'user', :url => finish_signup_path(current_user), :html => { role: 'form'}) do |f| %>
         <% if @show_errors && current_user.errors.any? %>
@@ -23,6 +21,4 @@
         </div>
       <% end %>
       </div>
-    </div>
-  </div>
 </div>
