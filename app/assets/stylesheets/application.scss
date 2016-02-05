@@ -31,12 +31,13 @@
 }
 
 .post {
+  margin-top: 35px;
   background-color: #fff;
   border-color: #edeeee;
   border-style: solid;
   border-radius: 3px;
   border-width: 1px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   .post-head {
     flex-direction: row;
     height: 64px;
@@ -125,7 +126,8 @@
 }
 
 .registration-bg {
-  padding-top: 4em;
+  margin-top: 100px;
+  padding-top: 5em;
   height: 100%;
   background-image: image-url('regbackg.jpg');
   -moz-background-size: cover;
@@ -135,7 +137,8 @@
 }
 
 .login-bg {
-  padding-top: 4em;
+  margin-top: 100px;
+  padding-top: 5em;
   height: 100%;
   background-image: image-url('loginbg.jpg');
   -moz-background-size: cover;
@@ -145,7 +148,6 @@
 }
 
 .log-in{
-  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
   text-align:center;
