@@ -1,0 +1,68 @@
+  <%= form_for @gallery, :html => {:multipart => true} do |f| %>
+ <% if @gallery.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gallery.errors.count, "error") %> prohibited this gallery from being saved:</h2>
+
+      <ul>
+      <% @gallery.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+    <div class="col-sm-offset-1 col-xs-10" id="hbg">
+     <div class="collapse navbar-collapse" >
+  <h4>
+      <ul class="nav navbar-nav">
+
+      <li> <%=link_to 'Photo Gallery', galleries_path, style: "color:#fff;" %></li>
+        <!-- <li><%= link_to 'Add Photo', new_gallery_path %></li> -->
+         
+      </ul>
+      </h4>
+    </div>
+    </h1>
+  <div class="col-sm-offset-3 col-sm-6 col-xs-12"  style="margin-top:50px;" id="blocklogin">
+
+          <form>
+
+            <div class="title-log" style="color:Lavender">Gallery Post</div>
+            <div class="form-group" style="color:Lavender">
+               <%= f.label :title , style:'margin-top: 10px;'%><br>
+                <%= f.text_field :title, class:'form-control', style:'margin-top: 10px;'%>
+             </div>
+              
+           
+            <div class="form-group" style="color:Lavender;">
+              <%= f.label :description, style:'margin-top: 30px;' %><br>
+              <%= f.text_area :description, class:'form-control', style:'margin-top: 10px;' %>
+            </div>
+            
+              <div  class="form-group" style="color:LightGoldenRodYellow;">
+              <%= f.label :file , style:'margin-top: 30px;' %><br>
+                <%= f.file_field :file , style:'margin-top: 10px;'%>
+                
+              </div>
+
+            <div class="form-group col-sm-offset-5">
+            
+             <%= f.submit class:'btn btn-default', style:'margin-top: 30px;' %>
+
+          </div>
+          <div class="form-group" style="color:LightGoldenRodYellow;">
+            
+            
+              <%= link_to 'Show', @gallery,  class:' btn btn-default' %> 
+              <%= link_to 'Back', galleries_path,  class:'col-sm-offset-9 btn btn-default' %>
+
+          </div>
+
+         
+          </form>
+          </div>
+          </div>
+<% end %>
+
+        
+</div>
+

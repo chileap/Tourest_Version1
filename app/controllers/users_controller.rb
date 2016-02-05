@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:finish_signup]
+  before_action :set_user, only: [:finish_signup, :get_points]
 
   # GET/PATCH /users/:id/finish_signup
   def finish_signup
@@ -21,7 +21,7 @@ class UsersController < ApplicationController
     end
 
     def user_params
-      accessible = [ :user_name, :email ] # extend with your own params
+      accessible = [ :user_name, :email] # extend with your own params
       accessible << [ :password, :password_confirmation ] unless params[:user][:password].blank?
       params.require(:user).permit(accessible)
     end

@@ -1,0 +1,17 @@
+<p id="notice" style="margin-top:100px;"><%= notice %></p>
+
+<div class="row">
+  <div class="col-xs-9">
+    <%= image_tag(@gallery.file_url, :width => "100%") if @gallery.file.present? %>
+  </div>
+
+  <div class="col-xs-3">
+    <h4  style="color:DeepSkyBlue"><b>Title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </b><%= @gallery.title%></h4>
+    <h4 style="color:DeepSkyBlue"><b>Description: </b><%= @gallery.description %></h4>
+    <p>
+      <%= link_to 'Edit', edit_gallery_path(@gallery) %> |
+      <%= link_to 'Delete', @gallery, confirm: 'Are you sure?', method: :delete %> |
+      <%= link_to 'Back', galleries_path %>
+    </p>
+  </div>
+</div>

@@ -20,5 +20,11 @@
         <%= @user.bio %>
       </p>
     </div>
+    <div class="col-md-6" style="margin-top: 100px;">
+      <% if @user == current_user %>
+            <h5 class="profile-user-name">Enter Your Code</h5>
+            <%= link_to "Code Enter",   points_path(@user.user_name), class: 'btn edit-button' %>
+          <% end %>
+    </div>
   </div>
 </div>

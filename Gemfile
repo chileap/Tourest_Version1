@@ -29,7 +29,7 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console'
   gem 'spring'
-
+  gem 'carrierwave'
   gem 'capybara'
   gem 'rspec-rails'
   gem 'factory_girl_rails'

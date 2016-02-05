@@ -47,8 +47,26 @@ body{
 	background: url('/assets/bg-head.jpg') no-repeat center center;
 	padding-top: 50px;
 	padding-bottom: 20px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+#hbg{
+	background: url('/assets/picture-109.jpg') no-repeat center center;
+	min-height: 850px;
+	padding-top: 50px;
+	padding-bottom: 20px;
 	margin-top: 70px;
 	margin-bottom: 30px;
+	border-radius: 3px;
+}
+#br{
+	background: url('/assets/br.jpg') no-repeat center center;
+	min-height: 720px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	margin-top: 70px;
+	margin-bottom: 20px;
+	border-radius: 10px;
 }
 #web-name{
 	font-family: 'MeriendaOne-Regular';
@@ -59,9 +77,15 @@ body{
 	font-family: 'MeriendaOne-Regular';
 	color: #005;
 }
+#blocklogin{
+	background: rgba(0,0,0,0.3);
+	padding: 10px 15px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 6px 6px #fff;
+}
 #block-login{
 	background: rgba(0,0,0,0.3);
-	padding: 20px 15px;
+	padding: 10px 15px;
 	border-radius: 5px;
 }
 .title-log{
@@ -95,7 +119,7 @@ body{
 
 /*=======================  footer ============================================*/
 .footer{
-	margin-top: 80px;
+	margin-top: 20px;
 	padding: 30px 0 10px 0;
 	background: #0089c1;
 }
@@ -103,7 +127,6 @@ body{
 	text-align: center;
 	font-size: 18px;
 	color: #fff;
-	border-bottom: 1px solid #fff;
 	padding-bottom: 10px;
 }
 .content-list-foot{
